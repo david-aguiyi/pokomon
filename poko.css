@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 * {
-	color: rgb(245, 241, 241);
+	color: #ffffff;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -16,13 +15,14 @@
 
 :root {
 	--font-family: Space;
+	--family: 'Nunito', sans-serif;
 }
 a {
 	text-decoration: none;
 }
 
 body {
-	background: #6B83C0;
+	background: #0061FF;
 	margin: 0;
 	overflow-x: hidden;
 	width: 100%;
@@ -53,6 +53,52 @@ body {
 	height: 7em;
 }
 
+small{
+	font-size: small;
+}
+
+.tokenomics{
+	margin-top: 4rem;
+}
+.section-a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+}
+
+.section-a p{
+	text-align: center;
+	font-family: var(--family);
+	font-weight: 700;
+}
+
+.section-a h1{
+	font-size: 5vw;
+	margin-top: 20px;
+	padding-inline: 20px;
+	text-align: center;
+}
+
+.section-a button{
+	width: 200px;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.section-j{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+	text-align: left;
+	font-size: 4vw;
+	display: none;
+	padding-inline:20px;
+	font-family: 'Courier New', Courier, monospace;
+}
 .poko-highlight{
 color: #B4EEFF;
     background-image: -webkit-linear-gradient(171deg, rgba(37, 0, 93, 1) 0%, rgba(102, 0, 255, 1) 61%, rgba(255, 184, 91, 1) 100%);
@@ -66,7 +112,7 @@ color: #B4EEFF;
 }
 .poko-highlight {
     color: #B4EEFF;
-    background-image: -webkit-linear-gradient(1deg, #9D72FE -5%, #2FB1C7 60%, #6796FF 80%, #7ECDFF 110%);
+    background-image: -webkit-linear-gradient(1deg, rgba(37, 0, 93, 1) -5%, #0061ff 60%, #eccc74 80%, rgba(255, 184, 91, 1) 110%);
     background-size: 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -75,10 +121,9 @@ color: #B4EEFF;
     animation: 6s infinite alternate gradientAnimation;
 }
 
-
 .tokenomics h1{
 	font-size: 3.8rem;
-	color: black;
+	color: rgb(255, 255, 255);
 	text-align: center;
 }
 .info {
@@ -112,6 +157,8 @@ margin: 20px;
 
 .info p{
 	text-align: left;
+	font-family: var(--family);
+	font-weight: 700;
 	font-size: 3vw;
 }
 
@@ -128,12 +175,13 @@ margin: 20px;
 
 .whyimg img{
 	width: 80%;
+	margin-top: 2rem;
 }
 .hero_button button{
 	font-size: 1.5rem;
-	font-weight: 700;
-	background-color: #403F65;
-	color: white;
+	font-weight: 900;
+	background-color: rgba(255, 184, 91, 1);
+	color: #000000;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
@@ -141,7 +189,7 @@ margin: 20px;
 	transition: 0.2s ease-in-out;
 	border: 2px solid rgb(39, 26, 26);
 	border-bottom: 5px solid rgb(39, 26, 26);
-	border-radius: 30px;
+	border-radius: 20px;
 	width: 200px;
 	height: 60px;
 }
@@ -238,10 +286,10 @@ a p{
 
 button {
 	font-weight: 900;
-	background-color: #403f65;
+	background-color: rgba(255, 184, 91, 1);
 	/* color: rgb(39, 26, 26); */
 	cursor: pointer;
-	color: white;
+	color: #000000;
 	display: inline-flex;
 	font-size: 1.5rem;
 	align-items: center;
@@ -249,7 +297,8 @@ button {
 	transition: 0.2s ease-in-out;
 	border: 2px solid rgb(39, 26, 26);
 	border-bottom: 5px solid rgb(39, 26, 26);
-	border-radius: 30px;
+	border-radius: 20px;
+	/* border: none; */
 	width: 100px;
 	height: 50px;
 }
@@ -491,7 +540,7 @@ h1.bold-text {
 }
 
 .descrip p{
-	font-size: 8.9vw;
+	font-size: 2.3rem;
 	/* font-size: clamp(1.2rem, 8vw - 2rem, 3rem); */
 }
 
@@ -595,9 +644,9 @@ img.commerce {
 .smart-1,
 .commerce,
 .exchange {
-	padding: 1em;
-	font-size: 1em;
-	margin-top: -8rem;
+	padding-inline: 40px;
+	font-size: 5rem;
+	margin-top: -5rem;
 }
 
 img#comm {
@@ -613,12 +662,9 @@ img#comm {
 }
 
 .poko b {
-	font-weight: 900;
-	/* padding-bottom: 0.2rem; */
-	/* line-height: 2em; */
 	font-size: 3rem;
+	padding-top: 3rem;
 	color: #ffffff;
-	margin-top: 5rem;
 	word-spacing: 10px;
 	display: flex;
 	flex-direction: column;
@@ -626,12 +672,22 @@ img#comm {
 	cursor: pointer;
 	font-weight: 900;
 }
-
+.poko h1{
+	font-size: 3rem;
+	color: #ffffff;
+	word-spacing: 10px;
+	display: flex;
+	flex-direction: column;
+	/* transition: 0.23s ease-in-out; */
+	cursor: pointer;
+	font-weight: 900;
+}
 .p2p-info p {
 	padding-top: 1em;
 	width: auto;
+	font-size: 1rem;
 	color: rgb(255, 255, 255);
-	font-family: snart;
+	font-family: var(--family);
 	display: flex;
 	max-width: 650px;
 	align-items: center;
@@ -696,19 +752,38 @@ img#comm {
 	flex-direction: column;
 }
 
+.footer{
+	margin-top: 9rem;
+	background-color: black;
+	padding-block: 20px;
+}
+
+.community{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 10rem;
+	padding-inline: 40px;
+}
+
+.community .poko{
+	padding: 0;
+}
+
 .tax{
 	display: flex;
-	width: 350px;
+	width: 90%;
 	margin-top: 30px;
 	height: 600px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-/* margin-inline: 40px; */
-flex-wrap: wrap;
-background-color: rgb(24, 82, 98);
-border: 2px solid white;
-border-radius: 20px;
+	margin-inline: 40px;
+	flex-wrap: wrap;
+	background-color: rgba(5, 5, 5, 0.2);
+	border: 2px solid #0061FF;
+	border-radius: 50px;
 }
  .token-img{
 	margin-bottom: 40px;
@@ -721,30 +796,32 @@ border-radius: 20px;
 
  .smalle{
 	margin-top: 2rem;
- }
+	font-family: var(--family);
+	font-weight: 700;
+	}
 
  .bsmall{
 	margin-top: 0.5rem;
  }
  .token_button button{
-	width: 150px;
+	width: 190px;
 	margin-top: 2rem;
 	font-size: 1rem;
- }
+	}
 
 .poko button {
-	border-radius: 30px;
+	border-radius: 20px;
 	margin-top: 1em;
-	color: rgb(255, 255, 255);
-	width: 270px;
+	color: #000000;
+	width: 200px;
 	height: 60px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-weight: 700;
+	font-weight: 900;
 	text-align: center;
-	border-bottom: 5px solid rgb(39, 26, 26);
+	/* border-bottom: 5px solid rgb(245, 241, 241); */
 }
 
 input::selection {
@@ -795,9 +872,18 @@ input::-ms-selection {
 }
 .section-4 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-top: 5rem;
+	justify-content: center;
+}
+
+.section-about{
+	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
+	margin-top: 10rem;
 }
 
 .fstep {
@@ -1058,9 +1144,10 @@ button.buy {
 
 .tools {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	row-gap: 20px;
-	flex-direction: column;
+	margin-left: 30px;
+	/* flex-direction: column; */
 	align-items: center;
 	margin-top: 3rem;
 	margin-bottom: 2rem;
@@ -1073,7 +1160,16 @@ button.buy {
 .email p {
 	font-size: 1.4rem;
 	color: white;
-	font-family: snart;
+	font-family: var(--family);
+}
+
+.email span{
+	font-family: Space;
+	cursor: pointer;
+}
+
+.email span:hover{
+	color: #6796FF;
 }
 
 .dext h1 {
@@ -1190,14 +1286,20 @@ input {
 	border-radius: 20px;
 }
 
+
+
 footer p {
 	text-align: center;
-	font-family: snart;
+	font-family: var(--family);
 	margin-bottom: 20px;
 }
 
 .descript {
 	margin-top: 20px;
+}
+
+.email{
+	font-size: 5vw;
 }
 
 .buttons button {
@@ -1218,6 +1320,7 @@ button img {
 .buttons {
 	display: flex;
 	font-size: 3rem;
+	display: none;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
@@ -1273,8 +1376,8 @@ button img {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		/* flex-direction: column; */
-	
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	header {
 		margin-top: -0.5rem;
@@ -1312,6 +1415,20 @@ button img {
 
 	.hero-orange img {
 		width: 85px;
+	}
+
+	.community{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		margin-top: 10rem;
+		padding-inline: 40px;
+	
+	}
+
+	.descrip p{
+		font-size: 5rem;
 	}
 
 	@media (min-width: 800px) {
@@ -1366,13 +1483,13 @@ button img {
 		}
 
 		.poko b {
-			font-weight: 900;
-			padding-bottom: 0.2rem;
-			line-height: 1rem;
-			color: #6b83c0;
-			word-spacing: 10px;
+			/* font-weight: 900; */
+			/* padding-bottom: 0.2rem; */
+			/* line-height: 1rem; */
+			/* color: #6b83c0; */
+			/* word-spacing: 10px; */
 			/* border-bottom: 5px solid #88e900; */
-			white-space: nowrap;
+			/* white-space: nowrap; */
 		}
 
 		.p2p-info,
@@ -1412,15 +1529,22 @@ button img {
 	.features h1 {
 		font-size: 35px;
 	}
+
+	.section-4, .section-about{
+		display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	}
 }
 #section-1 {
-	height: vh;
+	/* height: 100vh; */
 	/* padding-inline: 2rem; */
 	display: flex;
-	margin-top: 9rem;
+	margin-top: 16rem;
 	/* justify-content: center; */
 	/* align-items: center; */
-	background-color: #6B83C0;
+	background-color: transparent;
 }
 
 .green-text {
@@ -1434,7 +1558,7 @@ button img {
 }
 
 .section-3 {
-	background-color: rgb(44, 53, 82);
+	background-color: #000000;
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
@@ -1535,12 +1659,20 @@ img.right-img {
 	button {
 		width: 200px;
 		height: 60px;
-		font-size: 3rem;
-		color: white;
+		font-size: 1.8rem;
+		color: #000000;
+		/* font-family: var(--family); */
 		/* padding-left: 50px; */
 		/* padding-inline: 30px; */
 		/* font-size: 80%; */
-		font-weight: 700;
+		font-weight: 900;
+	}
+
+	.section-4, .section-about{
+		display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
 	}
 
 	h1.bold-text {
@@ -1665,10 +1797,15 @@ img.right-img {
 
 	.section-3 {
 		display: flex;
-		background-color: #222831;
+		background-color: #000000;
 		flex-direction: row-reverse;
 		padding-inline: 20px;
 		align-items: center;
+		border-radius: 49px;
+		/* place-content: center; */
+		margin: auto;
+		margin-top: 4rem;
+		width: 90%;
 		justify-content: center;
 		flex-wrap: nowrap;
 	}
@@ -1711,8 +1848,8 @@ img.right-img {
 
 	.poko {
 		/* padding-left: 2em; */
-		font-size: 1.3rem;
-		width: auto;
+		/* font-size: 9rem; */
+		/* width: auto; */
 	}
 
 	.poko {
@@ -1827,6 +1964,17 @@ img.right-img {
 		border-radius: 20px;
 	}
 
+	.community{
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 10rem;
+		padding-inline: 40px;
+	}
+
+	
+
 	.buttons button {
 		width: 30rem;
 		height: 60px;
@@ -1849,6 +1997,7 @@ img.right-img {
 	.buttons {
 		font-size: 3rem;
 		display: flex;
+		display: none;
 		flex-direction: column;
 	}
 
@@ -1862,6 +2011,7 @@ img.right-img {
 		padding-inline: 40px;
 		border-radius: 30px;
 		height: 100px;
+		margin: 0 auto;
 		/* width: 80%; */
 		padding-top: 0.8rem;
 	}
@@ -1869,4 +2019,6 @@ img.right-img {
 	button img {
 		width: 45px;
 	}
+
+	.descrip p{font-size: 8rem;/* font-weight: 500; */}
 }
